@@ -1,4 +1,4 @@
-% extends 'base.html' %
+{% extends 'base.html' %}
 
 
 {% block title %}New Post{% endblock title %} 
@@ -6,9 +6,9 @@
 
 {% block content %}
 <h1>New post</h1>
-<from method="POST">
+<form method="POST">
     {% csrf_token %}
     {{ form.as_p }}
     <input type="submit" value="Create">
-</from>
+</form>
 {% endblock content %}
