@@ -1,4 +1,4 @@
-{% 'base.html' %}
+{% extends 'base.html' %}
 
 
 {% block title %}Logged Out{% endblock title %}
@@ -7,4 +7,4 @@
 <h1>Logged Out</h1>
 <p>You are now logged out. Come back soon !</p>
 <a class="nav-link" href="{% url 'logout' %}"></a>
-{% endblock content %}
+{% endblock content %}s
